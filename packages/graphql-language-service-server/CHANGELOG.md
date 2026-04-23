@@ -1,5 +1,11 @@
 # graphql-language-service-server
 
+## 2.14.9
+
+### Patch Changes
+
+- [#4187](https://github.com/graphql/graphiql/pull/4187) [`ca83879`](https://github.com/graphql/graphiql/commit/ca838797123c9ec0a3d9fc8fe9a30f10a4b1df3f) Thanks [@trevor-scheer](https://github.com/trevor-scheer)! - Bump required TypeScript runtime dependency from `^5.3.3` to `^5.8.0`. This is preparatory work for adopting the TypeScript Native Preview (tsgo) compiler in a follow-up change, which tracks TypeScript 5.8 semantics. In practice `^5.3.3` already resolved to TS 5.8+ for most consumers; the new floor only affects consumers who pin TypeScript to 5.3–5.7 via resolutions or overrides.
+
 ## 2.14.8
 
 ### Patch Changes
@@ -161,7 +167,7 @@
 
   ```ts
   // import it
-  import { locateCommand } from './graphql/tooling/lsp/locate.js';
+  import { locateCommand } from "./graphql/tooling/lsp/locate.js";
   export default {
     languageService: {
       locateCommand,
@@ -169,12 +175,12 @@
 
     projects: {
       a: {
-        schema: 'https://localhost:8000/graphql',
-        documents: './a/**/*.{ts,tsx,jsx,js,graphql}',
+        schema: "https://localhost:8000/graphql",
+        documents: "./a/**/*.{ts,tsx,jsx,js,graphql}",
       },
       b: {
-        schema: './schema/ascode.ts',
-        documents: './b/**/*.{ts,tsx,jsx,js,graphql}',
+        schema: "./schema/ascode.ts",
+        documents: "./b/**/*.{ts,tsx,jsx,js,graphql}",
       },
     },
   };
@@ -183,7 +189,7 @@
   ```ts
   // or define it inline
 
-  import { type LocateCommand } from 'graphql-language-service-server';
+  import { type LocateCommand } from "graphql-language-service-server";
 
   // relay LSP style
   const locateCommand = (projectName: string, typePath: string) => {
@@ -209,8 +215,8 @@
     languageService: {
       locateCommand,
     },
-    schema: 'https://localhost:8000/graphql',
-    documents: './**/*.{ts,tsx,jsx,js,graphql}',
+    schema: "https://localhost:8000/graphql",
+    documents: "./**/*.{ts,tsx,jsx,js,graphql}",
   };
   ```
 

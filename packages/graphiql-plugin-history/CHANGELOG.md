@@ -1,5 +1,16 @@
 # @graphiql/plugin-history
 
+## 0.4.2
+
+### Patch Changes
+
+- [#4140](https://github.com/graphql/graphiql/pull/4140) [`40359eb`](https://github.com/graphql/graphiql/commit/40359ebbf3acf0a9968d4cb83c57167be1b1b38a) Thanks [@trevor-scheer](https://github.com/trevor-scheer)! - Remove `react-compiler-runtime` peer dependency
+
+- [#4211](https://github.com/graphql/graphiql/pull/4211) [`e7b30c1`](https://github.com/graphql/graphiql/commit/e7b30c1ca5d2eeab63f59894515ea25df86331f8) Thanks [@davidjb](https://github.com/davidjb)! - Add \*.css to sideEffects to allow import of CSS in Webpack Javascript
+
+- Updated dependencies [[`463df14`](https://github.com/graphql/graphiql/commit/463df145abfe92511c485fcf05c1b4c51377f82e)]:
+  - @graphiql/toolkit@0.12.0
+
 ## 0.4.1
 
 ### Patch Changes

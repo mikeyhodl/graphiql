@@ -1,5 +1,11 @@
 # @graphiql/toolkit
 
+## 0.12.0
+
+### Minor Changes
+
+- [#4199](https://github.com/graphql/graphiql/pull/4199) [`463df14`](https://github.com/graphql/graphiql/commit/463df145abfe92511c485fcf05c1b4c51377f82e) Thanks [@trevor-scheer](https://github.com/trevor-scheer)! - Send spec-compliant `Accept` header (`application/graphql-response+json`) in `createSimpleFetcher`
+
 ## 0.11.3
 
 ### Patch Changes
@@ -127,7 +133,7 @@
 - [#2694](https://github.com/graphql/graphiql/pull/2694) [`e59ec32e`](https://github.com/graphql/graphiql/commit/e59ec32e7ccdf3f7f68656533555c63620826279) Thanks [@acao](https://github.com/acao)! - BREAKING: Don't pass `shouldPersistHeaders` anymore when invoking the fetcher function. This value can be looked up by consuming the `EditorContext`:
 
   ```js
-  import { useEditorContext } from '@graphiql/react';
+  import { useEditorContext } from "@graphiql/react";
 
   function MyComponent() {
     const { shouldPersistHeaders } = useEditorContext();

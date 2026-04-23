@@ -1,5 +1,14 @@
 # Change Log
 
+## 0.13.3
+
+### Patch Changes
+
+- [#4183](https://github.com/graphql/graphiql/pull/4183) [`2ef9389`](https://github.com/graphql/graphiql/commit/2ef9389311c6308f637a2493251c00bdb57b1421) Thanks [@trevor-scheer](https://github.com/trevor-scheer)! - Fix VS Code extension publishing scripts
+
+- Updated dependencies [[`ca83879`](https://github.com/graphql/graphiql/commit/ca838797123c9ec0a3d9fc8fe9a30f10a4b1df3f)]:
+  - graphql-language-service-server@2.14.9
+
 ## 0.13.2
 
 ### Patch Changes
@@ -137,7 +146,7 @@
 
   ```ts
   // import it
-  import { locateCommand } from './graphql/tooling/lsp/locate.js';
+  import { locateCommand } from "./graphql/tooling/lsp/locate.js";
   export default {
     languageService: {
       locateCommand,
@@ -145,12 +154,12 @@
 
     projects: {
       a: {
-        schema: 'https://localhost:8000/graphql',
-        documents: './a/**/*.{ts,tsx,jsx,js,graphql}',
+        schema: "https://localhost:8000/graphql",
+        documents: "./a/**/*.{ts,tsx,jsx,js,graphql}",
       },
       b: {
-        schema: './schema/ascode.ts',
-        documents: './b/**/*.{ts,tsx,jsx,js,graphql}',
+        schema: "./schema/ascode.ts",
+        documents: "./b/**/*.{ts,tsx,jsx,js,graphql}",
       },
     },
   };
@@ -159,7 +168,7 @@
   ```ts
   // or define it inline
 
-  import { type LocateCommand } from 'graphql-language-service-server';
+  import { type LocateCommand } from "graphql-language-service-server";
 
   // relay LSP style
   const locateCommand = (projectName: string, typePath: string) => {
@@ -185,8 +194,8 @@
     languageService: {
       locateCommand,
     },
-    schema: 'https://localhost:8000/graphql',
-    documents: './**/*.{ts,tsx,jsx,js,graphql}',
+    schema: "https://localhost:8000/graphql",
+    documents: "./**/*.{ts,tsx,jsx,js,graphql}",
   };
   ```
 

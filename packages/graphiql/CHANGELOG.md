@@ -1,5 +1,16 @@
 # Change Log
 
+## 5.2.3
+
+### Patch Changes
+
+- [#4211](https://github.com/graphql/graphiql/pull/4211) [`e7b30c1`](https://github.com/graphql/graphiql/commit/e7b30c1ca5d2eeab63f59894515ea25df86331f8) Thanks [@davidjb](https://github.com/davidjb)! - Add \*.css to sideEffects to allow import of CSS in Webpack Javascript
+
+- Updated dependencies [[`40359eb`](https://github.com/graphql/graphiql/commit/40359ebbf3acf0a9968d4cb83c57167be1b1b38a), [`e7b30c1`](https://github.com/graphql/graphiql/commit/e7b30c1ca5d2eeab63f59894515ea25df86331f8)]:
+  - @graphiql/plugin-doc-explorer@0.4.2
+  - @graphiql/plugin-history@0.4.2
+  - @graphiql/react@0.37.4
+
 ## 5.2.2
 
 ### Patch Changes
@@ -558,13 +569,13 @@
   ### Before
 
   ```jsx
-  import GraphiQL from 'graphiql';
+  import GraphiQL from "graphiql";
   ```
 
   ### After
 
   ```jsx
-  import { GraphiQL } from 'graphiql';
+  import { GraphiQL } from "graphiql";
   ```
 
 - [#3904](https://github.com/graphql/graphiql/pull/3904) [`d1395f9`](https://github.com/graphql/graphiql/commit/d1395f987b3f9c70b69ec5ad7283c63594dd7602) Thanks [@dimaMachina](https://github.com/dimaMachina)! - - support react 19, drop support react 16 and react 17
@@ -848,13 +859,13 @@
   ### Before
 
   ```jsx
-  import GraphiQL from 'graphiql';
+  import GraphiQL from "graphiql";
   ```
 
   ### After
 
   ```jsx
-  import { GraphiQL } from 'graphiql';
+  import { GraphiQL } from "graphiql";
   ```
 
 - [#3687](https://github.com/graphql/graphiql/pull/3687) [`09e7004`](https://github.com/graphql/graphiql/commit/09e700403beb6c7290d165df33a2455ac2196971) Thanks [@dimaMachina](https://github.com/dimaMachina)! - remove `disableTabs` option
@@ -1489,7 +1500,7 @@
   - `GraphiQL.MenuItem`: You can use the `ToolbarMenu.Item` component from `@graphiql/react` instead.
   - `GraphiQL.Group`: Grouping multiple buttons side-by-side is not provided out-of-the box anymore in the new GraphiQL UI. If you want to implement a similar feature in the new vertical toolbar you can do so by adding your own styles for your custom toolbar elements. Example:
     ```jsx
-    import { GraphiQL } from 'graphiql';
+    import { GraphiQL } from "graphiql";
     function CustomGraphiQL() {
       return (
         <GraphiQL>
@@ -1948,7 +1959,7 @@
   **Usage example:**
 
   ```tsx
-  <GraphiQL onSchemaChange={schema => console.log(schema)} />
+  <GraphiQL onSchemaChange={(schema) => console.log(schema)} />
   ```
 
 ## 1.5.20
