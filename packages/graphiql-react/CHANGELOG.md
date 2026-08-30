@@ -1,5 +1,11 @@
 # @graphiql/react
 
+## 0.38.1
+
+### Patch Changes
+
+- [#4476](https://github.com/graphql/graphiql/pull/4476) [`6d57aad`](https://github.com/graphql/graphiql/commit/6d57aad2fc67078bfa96b5edce5c3efdd4172591) Thanks [@trevor-scheer](https://github.com/trevor-scheer)! - Fix an extra empty tab being created on reload. The `query`/`variables`/`headers` storage keys are only written on edit, so reloading a session that never touched the editors found no stored editor state matching any tab and pushed a new empty one.
+
 ## 0.38.0
 
 ### Minor Changes
